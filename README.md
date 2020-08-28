@@ -13,7 +13,7 @@ Silver halides (in polish language: *"halogenki srebra"*)
 are light-sensitive chemicals that are commonly used in photographic 
 film and paper. 
 
-:speak_no_evil: [Listen to how to pronounce.](doc/halogenki_pronouncing_and_meaning.mp3)
+:speak_no_evil: [Listen to how to pronounce.](https://drive.google.com/file/d/10-Vul3PpnnrCwJiDUo3cjnfLJJew6oE9/view?usp=sharing)
 
 ## At what stage is the project currently?
 The app is in the stage of choosing the right tools and early database design.
