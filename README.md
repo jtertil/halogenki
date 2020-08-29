@@ -1,4 +1,4 @@
-# halogenki
+# halogenki [Work in progress]
 *A darkroom notepad for nerds who still use classic silver-based photo process.*
 
 ## What is this and why I do this?
@@ -16,4 +16,16 @@ film and paper.
 :speak_no_evil: [Listen to how to pronounce.](https://drive.google.com/file/d/10-Vul3PpnnrCwJiDUo3cjnfLJJew6oE9/view?usp=sharing)
 
 ## At what stage is the project currently?
-The app is in the stage of choosing the right tools and early database design.
+*so ... this journey has just begun :)*
+ - [x] choosing the right tools
+ - [x] database relation conception 
+ - [ ] database relation design
+ 
+
+## Technologies used:
+ * Python 3: flask, psycopg2, pytest
+ * PostgreSQL 12.0
+ * Docker: docker-compose
+
+
+

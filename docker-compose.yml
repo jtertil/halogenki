@@ -1,0 +1,13 @@
+version: '3.7'
+
+services:
+  # a postgres db running in RAM for unittests
+  postgres-ramdisk:
+    image: postgres:12.0
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=1234
+    ports:
+      - "5431:5432"
+    tmpfs:
+      - /var/lib/postgresql
