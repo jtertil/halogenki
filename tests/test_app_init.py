@@ -1,3 +1,4 @@
+import os
 import pytest
 
 from app1 import create_app
@@ -16,13 +17,18 @@ def client(app):
     yield app.test_client()
 
 
+def tests_are_running_in_test_env():
+    """Checks that tests are running in right environment."""
+    assert os.getenv('FLASK_ENV') == 'testing'
+
+
 def test_testing_set_true(app):
     """Test app instance has got testing flag equal True."""
     assert app.testing
 
 
-def test_app_factory_view(client):
-    """Test create app render a view."""
-    r = client.get(f'/app1')
+def test_appstatus_view(client):
+    """Test create_app render a view."""
+    r = client.get('/appstatus')
     assert r.status_code == 200
-    assert r.data == b'Flask is up and running in test config.'
+    assert b'Flask is up and running in test config.' in r.data
